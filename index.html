@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <title>Eduardo Porto de Araujo</title>
-    </head>
-    <body>
-        <h1>Bem-vindo ao meu portfólio 👋</h1>
-        <p>Sou desenvolvedor Java com foco em backend e sistemas distribuídos.</p>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Eduardo Porto Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px 40px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 0.95); /* Optional: light background */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url('83d396f0-0f8f-4bf2-9b9c-657b21884468.png') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+            padding-top: 100px; /* Adjust for fixed header height */
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            line-height: 1.4;
+        }
+
+        @media (min-width: 768px) {
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">Eduardo Porto Portfolio</div>
+    <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Fullstack Developer with over 10 years<br />of experience</h1>
+</section>
+</body>
 </html>
