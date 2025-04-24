@@ -18,7 +18,7 @@
 
         header {
             width: 100%;
-            padding: 20px 40px;
+            padding: 80px 40px;
             position: fixed;
             top: 0;
             left: 0;
@@ -31,7 +31,7 @@
         }
 
         .logo {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             font-weight: 700;
         }
 
@@ -44,19 +44,20 @@
 
         .hero {
             height: 100vh;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url('83d396f0-0f8f-4bf2-9b9c-657b21884468.png') center/cover no-repeat;
+            background: url('83d396f0-0f8f-4bf2-9b9c-657b21884468.png') center center no-repeat;
+            background-size: contain; /* Or use 'cover' if you prefer full fill */
+            background-position: center;
+            background-repeat: no-repeat;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             color: #fff;
-            padding: 0 20px;
-            padding-top: 100px;
+            padding: 20px 20px 0;
         }
 
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             line-height: 1.4;
             font-weight: 600;
         }
